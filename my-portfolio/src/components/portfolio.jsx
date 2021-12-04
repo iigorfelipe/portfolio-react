@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './header';
+import Navigation from './navigation';
 import sanji from '../imagens/sanji.gif';
 import luffy from '../imagens/luffy.gif';
 import zoro from '../imagens/zoro.gif';
@@ -25,7 +25,7 @@ class Portfolio extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <Navigation />
         <div className="portfolio-items-wrapper">
           <div className="portfolio-items">
             <div className="portfolio-item">

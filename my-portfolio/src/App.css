@@ -1,51 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-  background: #6361d3;
+  background: #222327;
   text-align: center;
   color: white;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.header-menu {
-  display: flex;
-  justify-content: end;
-  padding: 20px 20px 0px;
-  margin-bottom: 20px;
-}
-
-.header-link {
-  margin-left: 35px;
-  font-size: x-large;
-}
-
-.header-link-home {
-  font-size: x-large;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
 .main-container {
   font-size: xx-large;
-  margin-top: 10%;
+  margin-top: 10vh;
+}
+
+.main-links {
+  margin-top: 30px;
 }
 
 .main-link {
   margin: 5px;
   font-size: 40px;
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.main-nav-link {
-  font-size: 40px;
-  margin-top: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 .main-btn {
@@ -91,7 +70,7 @@ a {
 .portfolio-item, .about-item {
   flex: none;
   width: 50%;
-  height: 500px;
+  height: 400px;
   scroll-snap-align: start;
   pointer-events: none;
 }

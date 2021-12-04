@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './header';
+import Navigation from './navigation';
 import lis from '../imagens/lis.gif';
 import op from '../imagens/one-piece.jpg';
 import portal from '../imagens/portal2.gif';
@@ -25,7 +25,7 @@ class About extends React.Component {
   render() {
     return (
       <>
-      <Header />
+      <Navigation />
         <div className="about-items-wrapper">
           <div className="about-items">
             <div className="about-item">
