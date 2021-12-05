@@ -3,6 +3,7 @@ import Main from './components/main';
 import About from './components/about';
 import Portfolio from './components/portfolio';
 import AindaNaoSei from './components/nse';
+import NotFound from './components/notFound';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/about" component={ About } />
         <Route exact path="/portfolio" component={ Portfolio } />
         <Route exact path="/" component={ AindaNaoSei } />
+        <Route exact path="*" component={ NotFound } />
       </Switch>
     </BrowserRouter>
   );

@@ -50,7 +50,7 @@
   color: white;
 }
 
-.nav ul li:hover a .icon {
+.nav ul li.active a .icon {
   transform: translateY(-32px)
 }
 
@@ -65,7 +65,7 @@
   transform: translateY(20px);
 }
 
-.nav ul li:hover a .text {
+.nav ul li.active a .text {
   opacity: 1;
   transform: translateY(10px);
 }

@@ -8,46 +8,79 @@ import { MdOutlinePhotoSizeSelectActual } from 'react-icons/md';
 import '../css/navigation.css';
 
 class Navigation extends React.Component {
-  activeLink = () => {
-    const list = document.querySelectorAll('.list');
-    list.forEach((elem) =>  elem.classList.remove('active'));
+  constructor() {
+    super();
+
+    this.state = {
+      links: [
+        {
+          id: 1,
+          to: "/",
+          name: "Home",
+          icon: <AiOutlineHome />,
+          className: "list"
+        },
+        {
+          id: 2,
+          to: "/about",
+          name: "About",
+          icon: <CgProfile />,
+          className: "list"
+        },
+        {
+          id: 3,
+          to: "#",
+          name: "Message",
+          icon: <TiMessages />,
+          className: "list"
+        },
+        {
+          id: 4,
+          to: "/portfolio",
+          name: "Portfolio",
+          icon: <MdOutlinePhotoSizeSelectActual />,
+          className: "list"
+        },
+        {
+          id: 5,
+          to: "#",
+          name: "Settings",
+          icon: <IoMdSettings />,
+          className: "list"
+        }
+      ],
+      activeLink: null
+    };
   }
 
-  render() {  
+  handleClick = (id) => {
+    this.setState({ activeLink: id });
+  };
+
+  render() {
+    const { links, activeLink } = this.state;
+
     return (
       <div className="nav-container">
         <div className="nav">
           <ul>
-            <li className="list active">
-              <NavLink to="#" onClick={ () => { this.activeLink() }}>
-                <span className="icon"><AiOutlineHome /></span>
-                <span className="text">Home</span>
-              </NavLink>
-            </li>
-            <li className="list">
-              <NavLink to="#" onClick={ () => { this.activeLink() }}>
-                <span className="icon"><CgProfile /></span>
-                <span className="text">About</span>
-              </NavLink>
-            </li>
-            <li className="list">
-              <NavLink to="#" onClick={ () => { this.activeLink() }}>
-                <span className="icon"><TiMessages /></span>
-                <span className="text">Contact</span>
-              </NavLink>
-            </li>
-            <li className="list">
-              <NavLink to="#" onClick={ () => { this.activeLink() }}>
-                <span className="icon"><MdOutlinePhotoSizeSelectActual /></span>
-                <span className="text">Portfolio</span>
-              </NavLink>
-            </li>
-            <li className="list">
-              <NavLink to="#" onClick={ () => { this.activeLink() }}>
-                <span className="icon"><IoMdSettings /></span>
-                <span className="text">Settings</span>
-              </NavLink>
-            </li>
+            {links.map(link => {
+              return (               
+                <li
+                  key={link.id}
+                  id={link.id}
+                  className={
+                    link.className +
+                    (link.id === activeLink ? " active" : "")
+                  }
+                >
+                  <NavLink to={link.to} onClick={() => this.handleClick(link.id)}>
+                    <span className="icon">{link.icon}</span>
+                    <span className="text">{link.name}</span>
+                  </NavLink>
+                </li>
+              );               
+            })}
             <div className="indicator"></div>
           </ul>
         </div>
