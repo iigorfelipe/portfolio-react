@@ -5,6 +5,7 @@ import luffy from '../imagens/luffy.gif';
 import zoro from '../imagens/zoro.gif';
 import robin from '../imagens/nico-robin.gif';
 import teach from '../imagens/blackbeard.gif';
+import { BsMouse } from 'react-icons/bs';
 
 class Portfolio extends React.Component {
   componentDidMount() {
@@ -45,6 +46,7 @@ class Portfolio extends React.Component {
             </div>
           </div>
         </div>
+        <div>Role o <span className='icon-scroll'><BsMouse /></span> sobre as imagens</div>
       </>
     );
   }

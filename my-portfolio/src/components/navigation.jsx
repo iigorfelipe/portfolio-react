@@ -49,39 +49,58 @@ class Navigation extends React.Component {
           className: "list"
         }
       ],
-      activeLink: null
+      activeLink: null,
+      activeDisplay: false
     };
   }
 
-  handleClick = (id) => {
+  activeOn = (id) => {
     this.setState({ activeLink: id });
   };
 
+  activeOff= () => {
+    this.setState({ activeLink: null });
+  };
+
+  displayOn = () => {
+    this.setState({ activeDisplay: true });
+  }
+
+  displayOff = () => {
+    this.setState({ activeDisplay: false });
+  }
+
   render() {
-    const { links, activeLink } = this.state;
+    const { links, activeLink, activeDisplay } = this.state;
 
     return (
       <div className="nav-container">
         <div className="nav">
           <ul>
-            {links.map(link => {
-              return (               
+            {links.map(elem => {
+              return (
                 <li
-                  key={link.id}
-                  id={link.id}
+                  key={elem.id}
+                  id={elem.id}
                   className={
-                    link.className +
-                    (link.id === activeLink ? " active" : "")
+                    elem.className +
+                    (elem.id === activeLink ? " active" : "")
                   }
+                  onMouseEnter={ this.displayOn }
+                  onMouseLeave={ this.displayOff }
                 >
-                  <NavLink to={link.to} onClick={() => this.handleClick(link.id)}>
-                    <span className="icon">{link.icon}</span>
-                    <span className="text">{link.name}</span>
+                  <NavLink 
+                    to={elem.to}
+                    onMouseEnter={() => this.activeOn(elem.id)}
+                    onMouseLeave={ this.activeOff } 
+                  >
+                    <span className="icon">{elem.icon}</span>
+                    <span className="text">{elem.name}</span>
                   </NavLink>
                 </li>
               );               
             })}
-            <div className="indicator"></div>
+            <div className={activeDisplay ? "indicator" : ""}></div>
           </ul>
         </div>
       </div>

@@ -5,6 +5,7 @@ import op from '../imagens/one-piece.jpg';
 import portal from '../imagens/portal2.gif';
 import fav from '../imagens/favorite-films.png';
 import book from '../imagens/treasure-island.jpg';
+import { BsMouse } from 'react-icons/bs';
 
 class About extends React.Component {
   componentDidMount() {
@@ -45,6 +46,7 @@ class About extends React.Component {
             </div>
           </div>
         </div>
+        <div>Role o <span className='icon-scroll'><BsMouse /></span> sobre as imagens</div>
       </>
     );
   }

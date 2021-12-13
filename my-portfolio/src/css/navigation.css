@@ -9,7 +9,8 @@
   position: relative;
   width: 400px;
   height: 70px;
-  background: black;
+  background: #222327;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +51,7 @@
   color: white;
 }
 
-.nav ul li.active a .icon {
+.nav ul li:hover a .icon {
   transform: translateY(-32px)
 }
 
@@ -65,7 +66,7 @@
   transform: translateY(20px);
 }
 
-.nav ul li.active a .text {
+.nav ul li:hover a .text {
   opacity: 1;
   transform: translateY(10px);
 }
@@ -103,22 +104,22 @@
   box-shadow: -1px -10px 0 0 #222327;
 }
 
-.nav ul li:nth-child(1).active ~ .indicator {
+.nav ul li:nth-child(1):hover ~ .indicator {
   transform: translateX(calc(70px * 0));
 }
 
-.nav ul li:nth-child(2).active ~ .indicator {
+.nav ul li:nth-child(2):hover ~ .indicator {
   transform: translateX(calc(70px * 1));
 }
 
-.nav ul li:nth-child(3).active ~ .indicator {
+.nav ul li:nth-child(3):hover ~ .indicator {
   transform: translateX(calc(70px * 2));
 }
 
-.nav ul li:nth-child(4).active ~ .indicator {
+.nav ul li:nth-child(4):hover ~ .indicator {
   transform: translateX(calc(70px * 3));
 }
 
-.nav ul li:nth-child(5).active ~ .indicator {
+.nav ul li:nth-child(5):hover ~ .indicator {
   transform: translateX(calc(70px * 4));
 }
