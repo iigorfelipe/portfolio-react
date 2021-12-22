@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
 import { TiMessages } from 'react-icons/ti';
-import { IoMdSettings } from 'react-icons/io';
 import { MdOutlinePhotoSizeSelectActual } from 'react-icons/md';
 import '../css/navigation.css';
 
@@ -29,23 +28,16 @@ class Navigation extends React.Component {
         },
         {
           id: 3,
-          to: "#",
-          name: "Message",
-          icon: <TiMessages />,
-          className: "list"
-        },
-        {
-          id: 4,
           to: "/portfolio",
           name: "Portfolio",
           icon: <MdOutlinePhotoSizeSelectActual />,
           className: "list"
         },
         {
-          id: 5,
-          to: "#",
-          name: "Settings",
-          icon: <IoMdSettings />,
+          id: 4,
+          to: "/contact",
+          name: "Contact",
+          icon: <TiMessages />,
           className: "list"
         }
       ],
