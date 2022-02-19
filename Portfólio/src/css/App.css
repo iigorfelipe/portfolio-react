@@ -11,12 +11,12 @@ body {
   color: white;
 }
 
-.portfolio-items-wrapper, .about-items-wrapper {
+.items-wrapper {
   width: 100vw;
   margin-bottom: 10px;
 }
 
-.portfolio-items, .about-items {
+.items {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -24,7 +24,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.portfolio-item, .about-item {
+.item {
   flex: none;
   width: 50%;
   height: 380px;

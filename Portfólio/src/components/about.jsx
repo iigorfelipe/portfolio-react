@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navigation from './navigation';
 import lis from '../imagens/lis.gif';
 import op from '../imagens/one-piece.jpg';
@@ -6,50 +6,34 @@ import portal from '../imagens/portal2.gif';
 import fav from '../imagens/favorite-films.png';
 import book from '../imagens/treasure-island.jpg';
 import { BsMouse } from 'react-icons/bs';
+import { rollHorizontally } from './scroll';
 
-class About extends React.Component {
-  componentDidMount() {
-    this.func();
-  }
+export default function About() {
+  useEffect(() => { rollHorizontally() },[]);
 
-  func = () => {
-    document.querySelector(".about-items")
-      .addEventListener("wheel", event => {
-      if (event.deltaY > 0) {
-        event.target.scrollBy(300, 0);
-      } else {
-        event.target.scrollBy(-300, 0);
-      }
-    });
-  }
-
-  render() {
-    return (
-      <>
-      <Navigation />
-        <div className="about-items-wrapper">
-          <div className="about-items">
-            <div className="about-item">
-              <img src={ lis } alt="" />
-            </div>
-            <div className="about-item">
-              <img src={ op } alt="" />
-            </div>
-            <div className="about-item">
-              <img src={ portal } alt="" />
-            </div>
-            <div className="about-item">
-              <img src={ fav } alt="" />
-            </div>
-            <div className="about-item">
-              <img src={ book } alt="" />
-            </div>
+  return (
+    <>
+    <Navigation />
+      <div className="items-wrapper">
+        <div className="items">
+          <div className="item">
+            <img src={ lis } alt="" />
+          </div>
+          <div className="item">
+            <img src={ op } alt="" />
+          </div>
+          <div className="item">
+            <img src={ portal } alt="" />
+          </div>
+          <div className="item">
+            <img src={ fav } alt="" />
+          </div>
+          <div className="item">
+            <img src={ book } alt="" />
           </div>
         </div>
-        <div>Role o <span className='icon-scroll'><BsMouse /></span> sobre as imagens</div>
-      </>
-    );
-  }
+      </div>
+      <div>Role o <span className='icon-scroll'><BsMouse /></span> sobre as imagens</div>
+    </>
+  );
 }
-
-export default About;

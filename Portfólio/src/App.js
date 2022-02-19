@@ -7,7 +7,7 @@ import NotFound from './components/notFound';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './css/App.css';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Switch>
@@ -15,11 +15,9 @@ function App() {
         <Route exact path="/about" component={ About } />
         <Route exact path="/contact" component={ Contact } />
         <Route exact path="/portfolio" component={ Portfolio } />
-        <Route exact path="/" component={ AindaNaoSei } />
+        <Route exact path="/nsei" component={ AindaNaoSei } />
         <Route exact path="*" component={ NotFound } />
       </Switch>
     </BrowserRouter>
   );
 }
-
-export default App;

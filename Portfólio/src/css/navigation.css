@@ -1,24 +1,23 @@
 .nav-container {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 25vh;
 }
 
 .nav {
+  align-items: center;
+  background: #222327;
+  border-radius: 10px;
+  display: flex;
+  height: 70px;
+  justify-content: center;
   position: relative;
   width: 400px;
-  height: 70px;
-  background: #222327;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
 }
 
 .nav ul {
   display: flex;
-  width: 350px;
 }
 
 .nav ul li {

@@ -1,13 +1,11 @@
 import React from 'react';
+import Navigation from './navigation';
 
-class AindaNaoSei extends React.Component {
-  render() {
-    return (
-      <div>
-        Ainda não sei
-      </div>
-    );
-  }
+export default function AindaNaoSei() {
+  return (
+    <div>
+      <Navigation />
+      Ainda não sei
+    </div>
+  );
 }
-
-export default AindaNaoSei;
