@@ -24,14 +24,14 @@ export default function Contact() {
               <div className="icon"><BsPhone /></div>
               <div className="text">
                 <h3>Phone</h3>
-                <p>4002-8922</p>
+                <p>(11) 9 97478-5794</p>
               </div>
             </div>
             <div className="box">
               <div className="icon"><AiOutlineMail /></div>
               <div className="text">
                 <h3>Email</h3>
-                <p>juarino@gmail.com</p>
+                <p>iigorfelipe@gmail.com</p>
               </div>
             </div>
           </div>
