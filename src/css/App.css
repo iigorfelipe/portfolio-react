@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #222327;
+  background: url('../imagens/photo-1516557070061-c3d1653fa646.avif');
   text-align: center;
   color: white;
 }
@@ -31,12 +31,6 @@ body {
   scroll-snap-align: start;
   pointer-events: none;
 }
-
-/* img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .icon-scroll {
   font-size: 1.3em;
