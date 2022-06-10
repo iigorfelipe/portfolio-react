@@ -5,6 +5,7 @@ import zoro from '../imagens/zoro.gif';
 import robin from '../imagens/nico-robin.gif';
 import { BsMouse } from 'react-icons/bs';
 import { rollHorizontally } from './helpers/scroll';
+import '../css/carousel.css'
 
 export default function About() {
   useEffect(() => { rollHorizontally() }, []);
