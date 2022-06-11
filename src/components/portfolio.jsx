@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import Navigation from './navigation';
 import moves from '../imagens/moves.gif';
-import defeat from '../imagens/defeat.gif';
-import luffy from '../imagens/luffy.gif'
-import zoro from '../imagens/zoro.gif';
-import robin from '../imagens/nico-robin.gif';
+import weather from '../imagens/weather.png'
+import portifolio from '../imagens/portifolio.png';
+import yt from '../imagens/yt.png';
 import { BsMouse } from 'react-icons/bs';
 import { rollHorizontally } from './helpers/scroll';
 import '../css/carousel.css'
@@ -19,15 +18,10 @@ export default function Portfolio() {
       <div className="items-wrapper">
 
         <div className="items">
-          <div className="item">
-            <div className="container-pikachu">
-              <img className="pikachu" src={ moves } alt="" />
-              <img className="pikachu" src={ defeat } alt="" />
-            </div>
-          </div>
-          <div className="item"><img src={ robin } alt="" /></div>
-          <div className="item"><img src={ luffy } alt="" /></div>
-          <div className="item"><img src={ zoro } alt="" /></div>
+          <div className="item"><img src={ moves } alt="" /></div>
+          <div className="item"><img src={ weather } alt="" /></div>
+          <div className="item"><img src={ yt } alt="" /></div>
+          <div className="item"><img src={ portifolio } alt="" /></div>
         </div>
 
       </div>
