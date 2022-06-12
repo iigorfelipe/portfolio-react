@@ -17,7 +17,7 @@ export default function Contact() {
               <div className="box">           
                 <div className="icon"><BiMap /></div>
                 <div className="text">
-                  <h3>Address</h3>
+                  <h3>Endereço</h3>
                   <p>Piracaia, São Paulo</p>
                 </div>
               </div>
@@ -25,7 +25,7 @@ export default function Contact() {
               <div className="box">
                 <div className="icon"><BsPhone /></div>
                 <div className="text">
-                  <h3>Phone</h3>
+                  <h3>Celular</h3>
                   <p>(11) 9 7478-5794</p>
                 </div>
               </div>
@@ -41,11 +41,11 @@ export default function Contact() {
 
             <div className="contactForm">
               <form>
-                <h2>Send Message</h2>
+                <h2>Envie uma Mensagem</h2>
   
                 <div className="inputBox">
                   <input type="text"  name="" required="required"/>
-                  <span>Full Name</span>
+                  <span>Nome Completo</span>
                 </div>
 
                 <div className="inputBox">
@@ -55,11 +55,11 @@ export default function Contact() {
 
                 <div className="inputBox">
                   <textarea required="required"/>
-                  <span>Type your Message...</span>
+                  <span>Escreva sua mensagem...</span>
                 </div>
                
                 <div className="inputBox">
-                  <input type="submit" name="" value="Send" />
+                  <input type="submit" name="" value="Enviar" />
                 </div>
               </form>
             </div>

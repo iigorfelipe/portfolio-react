@@ -7,28 +7,28 @@ export const links = [
   {
     id: 1,
     to: "/",
-    name: "Home",
+    name: "Inicio",
     icon: <AiOutlineHome />,
     className: "list"
   },
   {
     id: 2,
     to: "/about",
-    name: "About",
+    name: "Sobre",
     icon: <CgProfile />,
     className: "list"
   },
   {
     id: 3,
     to: "/portfolio",
-    name: "Portfolio",
+    name: "Portfólio",
     icon: <MdOutlinePhotoSizeSelectActual />,
     className: "list"
   },
   {
     id: 4,
     to: "/contact",
-    name: "Contact",
+    name: "Contato",
     icon: <TiMessages />,
     className: "list"
   }

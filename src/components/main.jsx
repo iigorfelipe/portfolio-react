@@ -10,9 +10,8 @@ export default function Main() {
       <Navigation />
 
       <div className="main-container">
-        <h1>Hello, I'm Igor!</h1>
-        <p>Web development student</p>
-
+        <p className="main-p1">Olá, me chamo Igor!</p>
+        <p className="main-p2">Estudante de desenvolvimento web</p>
         <div className="main-links">
           <a
             className="main-link"

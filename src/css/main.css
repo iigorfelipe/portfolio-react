@@ -1,6 +1,21 @@
 .main-container {
-  font-size: xx-large;
   margin-top: 10vh;
+}
+
+.main-p1 {
+  font-size: 3em;
+}
+
+.main-p2 {
+  font-size: 1.4em;
+}
+
+.main-p3 {
+  font-size: 1.4em;
+}
+
+.main-p4 {
+  font-size: 1.4em;
 }
 
 .main-links {
