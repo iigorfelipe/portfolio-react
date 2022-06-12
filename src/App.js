@@ -2,7 +2,6 @@ import Main from './components/main';
 import About from './components/about';
 import Contact from './components/contact';
 import Portfolio from './components/portfolio';
-import AindaNaoSei from './components/nse';
 import NotFound from './components/notFound';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './css/App.css';
@@ -15,7 +14,6 @@ export default function App() {
         <Route exact path="/about" component={ About } />
         <Route exact path="/contact" component={ Contact } />
         <Route exact path="/portfolio" component={ Portfolio } />
-        <Route exact path="/nsei" component={ AindaNaoSei } />
         <Route exact path="*" component={ NotFound } />
       </Switch>
     </BrowserRouter>
