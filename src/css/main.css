@@ -4,7 +4,9 @@
 }
 
 .main-links {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .main-link {
@@ -12,32 +14,4 @@
   font-size: 40px;
   text-decoration: none;
   color: white;
-}
-
-.main-btn {
-  margin-top: 25px;
-  padding: 1rem  2rem;
-  border-radius: 8px;
-  background: transparent;
-  border: 2px solid black;
-  font-size: 1.2rem;
-  color: white;
-  cursor: pointer;
-  position: relative;
-}
-
-.main-btn::before {
-  content: '';
-  position: absolute;
-  background: black;
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .5s ease;
-}
-
-.main-btn:hover::before {
-  width: 100%;
 }

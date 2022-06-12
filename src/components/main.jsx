@@ -1,18 +1,15 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import Navigation from './navigation';
 import '../css/main.css';
 
 export default function Main() {
-  const history = useHistory();
-
   return (
     <>
       <Navigation />
 
       <div className="main-container">
-  
         <h1>Hello, I'm Igor!</h1>
         <p>Web development student</p>
 
@@ -40,8 +37,6 @@ export default function Main() {
             <AiOutlineMail />
           </Link>
         </div>
-
-        <button className="main-btn" onClick={ () => history.push('/nsei') }>Click me</button>
       </div>
     </>
   );

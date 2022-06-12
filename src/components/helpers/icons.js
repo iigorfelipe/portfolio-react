@@ -12,6 +12,8 @@ import {
   SiGithub,
   SiDocker,
   SiTailwindcss,
+  SiExpress,
+  SiSequelize
 } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 
@@ -83,6 +85,16 @@ export const icons = [
   },
   {
     id: 14,
+    name: 'Express',
+    icon: <SiExpress />,
+  },
+  {
+    id: 15,
+    name: 'Sequelize',
+    icon: <SiSequelize />,
+  },
+  {
+    id: 16,
     name: 'Tailwind',
     icon: <SiTailwindcss />,
   },
