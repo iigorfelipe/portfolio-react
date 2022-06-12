@@ -1,0 +1,28 @@
+.about-container {
+  display: flex;
+  padding: 20px;
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.about-about {
+  border: 1px solid rgb(255, 0, 0);
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.about-skills {
+  border: 1px solid rgb(94, 255, 0);
+  display: flex;
+}
+
+.about-skills-container {
+  border: 1px solid rgb(0, 17, 255);
+}
+
+.about-icon {
+  border: 1px solid red;
+  margin: 5px;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}

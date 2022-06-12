@@ -3,7 +3,7 @@ import { CgProfile } from 'react-icons/cg';
 import { TiMessages } from 'react-icons/ti';
 import { MdOutlinePhotoSizeSelectActual } from 'react-icons/md';
 
-export const arrayLinks = [
+export const links = [
   {
     id: 1,
     to: "/",

@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { arrayLinks } from './helpers/links';
+import { links } from './helpers/links';
 import '../css/navigation.css';
 
 export default function Navigation() {
   const [activeLink, setActiveLink] = useState(null);
-  const [links] = useState(arrayLinks);
 
   return (
     <div className="nav-container">

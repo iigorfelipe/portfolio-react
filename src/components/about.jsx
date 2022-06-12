@@ -1,34 +1,36 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navigation from './navigation';
-import { BsMouse } from 'react-icons/bs';
-import { rollHorizontally } from './helpers/scroll';
-import play from '../imagens/play.jpeg';
-import cinema from '../imagens/cinema.webp';
-import draw from '../imagens/pexels-photo.jpg';
-import '../css/carousel.css'
+import { icons } from './helpers/icons';
+import '../css/about.css'
 
 export default function About() {
-  useEffect(() => { rollHorizontally() }, []);
 
   return (
     <>
       <Navigation />
-  
-      <div className="items-wrapper">
 
-        <div className="items">
-          <div className="item">
-            <p>Olá, me chamo Igor, sou estudante de desenvolvimento web na Trybe</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro vero cum expedita ut aperiam tenetur velit, consectetur alias quia in voluptatibus doloremque voluptatum sint, nobis illum asperiores dolores. Necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro vero cum expedita ut aperiam tenetur velit, consectetur alias quia in voluptatibus doloremque voluptatum sint, nobis illum asperiores dolores. Necessitatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro vero cum expedita ut aperiam tenetur velit, consectetur alias quia in voluptatibus doloremque voluptatum sint, nobis illum asperiores dolores. Necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro vero cum expedita ut aperiam tenetur velit, consectetur alias quia in voluptatibus doloremque voluptatum sint, nobis illum asperiores dolores. Necessitatibus.</p>
-          </div>
-          <div className="item"><img src={ draw } alt="" /></div>
-          <div className="item"><img src={ play } alt="" /></div>
-          <div className="item"><img src={ cinema } alt="" /></div>
+      <div className="about-container">
+        <div className="about-about">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, obcaecati iste et voluptates, cum omnis qui totam sequi in placeat nulla inventore, maxime quibusdam quam! Ut repellendus illo saepe vero?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, obcaecati iste et voluptates, cum omnis qui totam sequi in placeat nulla inventore, maxime quibusdam quam! Ut repellendus illo saepe vero?</p>
         </div>
 
+        <div className="about-skills">
+          {
+            icons.map((item) => (
+              <div
+                key={item.id}
+                className="about-skills-container"
+              >
+                <div className="about-icon">
+                  {item.icon}
+                </div>
+                <div>{item.name}</div>
+              </div>
+            ))
+          }
+        </div>
       </div>
-
-      <div>Role o <span className='icon-scroll'><BsMouse /></span> sobre as imagens</div>
     </>
   );
 }
