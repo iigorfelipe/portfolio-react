@@ -7,6 +7,8 @@
 
 body {
   background: url('../imagens/photo-1516557070061-c3d1653fa646.avif');
+  background-repeat: repeat;
+  background-size: 20%;
   text-align: center;
   color: white;
 }
