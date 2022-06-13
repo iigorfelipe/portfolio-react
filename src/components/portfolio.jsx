@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
 import Navigation from './navigation';
-import moves from '../imagens/moves.gif';
-import weather from '../imagens/weather.png'
-import portifolio from '../imagens/portifolio.png';
-import yt from '../imagens/yt.png';
 import { BsMouse } from 'react-icons/bs';
 import { rollHorizontally } from './helpers/scroll';
 import '../css/carousel.css'
+import { projects } from './helpers/projects';
 
 export default function Portfolio() {
   useEffect(() => { rollHorizontally() }, []);
@@ -16,12 +13,19 @@ export default function Portfolio() {
       <Navigation />
   
       <div className="items-wrapper">
-
+        
         <div className="items">
-          <div className="item"><img src={ moves } alt="" /></div>
-          <div className="item"><img src={ weather } alt="" /></div>
-          <div className="item"><img src={ yt } alt="" /></div>
-          <div className="item"><img src={ portifolio } alt="" /></div>
+        <p>Nome do Projeto</p>
+          {
+            projects.map((item) => (
+              <div
+                key={ item.id }
+                className="item"
+              >
+                <img src={ item.img } alt="" />
+              </div>
+            ))
+          }
         </div>
 
       </div>
