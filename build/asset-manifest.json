@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portifolio/static/css/main.f405dd5d.chunk.css",
+    "main.js": "/portifolio/static/js/main.f95c5105.chunk.js",
+    "main.js.map": "/portifolio/static/js/main.f95c5105.chunk.js.map",
+    "runtime-main.js": "/portifolio/static/js/runtime-main.47f09378.js",
+    "runtime-main.js.map": "/portifolio/static/js/runtime-main.47f09378.js.map",
+    "static/js/2.e53637ae.chunk.js": "/portifolio/static/js/2.e53637ae.chunk.js",
+    "static/js/2.e53637ae.chunk.js.map": "/portifolio/static/js/2.e53637ae.chunk.js.map",
+    "index.html": "/portifolio/index.html",
+    "static/css/main.f405dd5d.chunk.css.map": "/portifolio/static/css/main.f405dd5d.chunk.css.map",
+    "static/js/2.e53637ae.chunk.js.LICENSE.txt": "/portifolio/static/js/2.e53637ae.chunk.js.LICENSE.txt",
+    "static/media/moves.7cbd4436.gif": "/portifolio/static/media/moves.7cbd4436.gif",
+    "static/media/App.css": "/portifolio/static/media/photo-1516557070061-c3d1653fa646.7c0dab1b.avif",
+    "static/media/portifolio.856e2b69.png": "/portifolio/static/media/portifolio.856e2b69.png",
+    "static/media/weather.1f22c407.png": "/portifolio/static/media/weather.1f22c407.png",
+    "static/media/yt.c27e5d27.png": "/portifolio/static/media/yt.c27e5d27.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47f09378.js",
+    "static/js/2.e53637ae.chunk.js",
+    "static/css/main.f405dd5d.chunk.css",
+    "static/js/main.f95c5105.chunk.js"
+  ]
+}
