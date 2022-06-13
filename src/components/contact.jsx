@@ -44,17 +44,17 @@ export default function Contact() {
                 <h2>Envie uma Mensagem</h2>
   
                 <div className="inputBox">
-                  <input type="text"  name="name" required="required"/>
+                  <input type="text"  name="Nome" required="required"/>
                   <span>Nome Completo</span>
                 </div>
 
                 <div className="inputBox">
-                  <input type="email"  name="email" required="required"/>
+                  <input type="email"  name="Email" required="required"/>
                   <span>Email</span>
                 </div>
 
                 <div className="inputBox">
-                  <textarea required="required"/>
+                  <textarea required="required" name="Mensagem"/>
                   <span>Escreva sua mensagem...</span>
                 </div>
                
