@@ -40,16 +40,16 @@ export default function Contact() {
             </div>
 
             <div className="contactForm">
-              <form>
+              <form action="https://formsubmit.co/f6f1c67437a5cb2429053f5475da398b" method="POST">
                 <h2>Envie uma Mensagem</h2>
   
                 <div className="inputBox">
-                  <input type="text"  name="" required="required"/>
+                  <input type="text"  name="name" required="required"/>
                   <span>Nome Completo</span>
                 </div>
 
                 <div className="inputBox">
-                  <input type="text"  name="" required="required"/>
+                  <input type="email"  name="email" required="required"/>
                   <span>Email</span>
                 </div>
 
@@ -59,7 +59,7 @@ export default function Contact() {
                 </div>
                
                 <div className="inputBox">
-                  <input type="submit" name="" value="Enviar" />
+                  <input type="submit" value="Enviar" />
                 </div>
               </form>
             </div>
