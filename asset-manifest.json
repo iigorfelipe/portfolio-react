@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.f405dd5d.chunk.css",
-    "main.js": "/portifolio/static/js/main.feadf7f9.chunk.js",
-    "main.js.map": "/portifolio/static/js/main.feadf7f9.chunk.js.map",
-    "runtime-main.js": "/portifolio/static/js/runtime-main.47f09378.js",
-    "runtime-main.js.map": "/portifolio/static/js/runtime-main.47f09378.js.map",
-    "static/js/2.e53637ae.chunk.js": "/portifolio/static/js/2.e53637ae.chunk.js",
-    "static/js/2.e53637ae.chunk.js.map": "/portifolio/static/js/2.e53637ae.chunk.js.map",
-    "index.html": "/portifolio/index.html",
-    "static/css/main.f405dd5d.chunk.css.map": "/portifolio/static/css/main.f405dd5d.chunk.css.map",
-    "static/js/2.e53637ae.chunk.js.LICENSE.txt": "/portifolio/static/js/2.e53637ae.chunk.js.LICENSE.txt",
-    "static/media/moves.7cbd4436.gif": "/portifolio/static/media/moves.7cbd4436.gif",
-    "static/media/App.css": "/portifolio/static/media/photo-1516557070061-c3d1653fa646.7c0dab1b.avif",
-    "static/media/portifolio.856e2b69.png": "/portifolio/static/media/portifolio.856e2b69.png",
-    "static/media/weather.1f22c407.png": "/portifolio/static/media/weather.1f22c407.png",
-    "static/media/yt.c27e5d27.png": "/portifolio/static/media/yt.c27e5d27.png"
+    "main.css": "/portfolio-react/static/css/main.09b46ad9.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.feadf7f9.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.feadf7f9.chunk.js.map",
+    "runtime-main.js": "/portfolio-react/static/js/runtime-main.290fcdef.js",
+    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.290fcdef.js.map",
+    "static/js/2.e53637ae.chunk.js": "/portfolio-react/static/js/2.e53637ae.chunk.js",
+    "static/js/2.e53637ae.chunk.js.map": "/portfolio-react/static/js/2.e53637ae.chunk.js.map",
+    "index.html": "/portfolio-react/index.html",
+    "static/css/main.09b46ad9.chunk.css.map": "/portfolio-react/static/css/main.09b46ad9.chunk.css.map",
+    "static/js/2.e53637ae.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.e53637ae.chunk.js.LICENSE.txt",
+    "static/media/moves.7cbd4436.gif": "/portfolio-react/static/media/moves.7cbd4436.gif",
+    "static/media/App.css": "/portfolio-react/static/media/photo-1516557070061-c3d1653fa646.7c0dab1b.avif",
+    "static/media/portifolio.856e2b69.png": "/portfolio-react/static/media/portifolio.856e2b69.png",
+    "static/media/weather.1f22c407.png": "/portfolio-react/static/media/weather.1f22c407.png",
+    "static/media/yt.c27e5d27.png": "/portfolio-react/static/media/yt.c27e5d27.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.47f09378.js",
+    "static/js/runtime-main.290fcdef.js",
     "static/js/2.e53637ae.chunk.js",
-    "static/css/main.f405dd5d.chunk.css",
+    "static/css/main.09b46ad9.chunk.css",
     "static/js/main.feadf7f9.chunk.js"
   ]
 }
