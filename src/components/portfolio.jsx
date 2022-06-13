@@ -11,16 +11,29 @@ export default function Portfolio() {
   return (
     <>
       <Navigation />
-  
+    
+      {
+        projects.map((item) => (
+          <a
+            className="item-a"
+            key={ item.id }
+            href={ item.url }
+            target="_blank"
+            rel="noreferrer"
+          >
+            { item.name }
+          </a>
+        ))
+      }
+
       <div className="items-wrapper">
         
         <div className="items">
-        <p>Nome do Projeto</p>
           {
             projects.map((item) => (
               <div
-                key={ item.id }
                 className="item"
+                key={ item.id }
               >
                 <img src={ item.img } alt="" />
               </div>

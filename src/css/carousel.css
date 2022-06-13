@@ -1,3 +1,11 @@
+.item-a {
+  text-decoration: none;
+  display: inline-flex;
+  margin-right: 55px;
+  color: #00bcd4;
+  margin-top: 10px;
+}
+
 .items-wrapper {
   width: 100vw;
   margin-bottom: 10px;
