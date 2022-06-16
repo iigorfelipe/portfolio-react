@@ -4,6 +4,9 @@
   margin-right: 55px;
   color: #00bcd4;
   margin-top: 10px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid white;
+  padding: 5px;
 }
 
 .items-wrapper {
