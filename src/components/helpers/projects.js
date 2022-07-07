@@ -8,31 +8,31 @@ export const projects = [
   {
     id: 1,
     name: "Pikachu Run",
-    url: "https://iigorfelipe.github.io/pikachu/",
+    url: "https://github.com/iigorfelipe/pikachu",
     img: pikachu,
   },
   {
     id: 2,
     name: "Lista de Tarefas",
-    url: "https://iigorfelipe.github.io/lets-organize/",
+    url: "https://github.com/iigorfelipe/lets-organize",
     img: list,
   },
   {
     id: 3,
     name: "Weather App",
-    url: "https://iigorfelipe.github.io/weather-app/",
+    url: "https://github.com/iigorfelipe/weather-app",
     img: weather,
   },
   {
     id: 4,
     name: "Layout do YouTube",
-    url: "https://iigorfelipe.github.io/layout-yt/",
+    url: "https://github.com/iigorfelipe/layout-yt",
     img: yt,
   },
   {
     id: 5,
     name: "Portfólio",
-    url: "https://iigorfelipe.github.io/portfolio-react/",
+    url: "https://github.com/iigorfelipe/portfolio-react",
     img: portfolio,
   },
 ]
